@@ -1,0 +1,23 @@
+div.qaccordion-normal {
+margin-top: 10px;
+}
+
+div.qaccordion-normal div.acc-header {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px 0 0 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #ddd;
+  background:#000;
+}
+
+div.qaccordion-normal div.content p {
+  color:#000; 
+  line-height: 1.3em; 
+  font-size: 1.0em;
+}
+
+div.qaccordion-normal h4 {
+  font-size: 1.0em;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>Qlue Accordion</name> 
+  <author>Aaron Harding</author> 
+  <creationDate>January 2011</creationDate> 
+  <copyright>All rights reserved by Qlue 2010.</copyright> 
+  <license>GPL 2.0</license> 
+  <authorEmail>aaron.harding@qlue.info</authorEmail> 
+  <authorUrl>www.qlue.co.uk</authorUrl> 
+  <version>1.5.4</version> 
+  <description>QACCORDION_DESCRIPTION</description>
+  
+  <files>
+    <filename module="mod_qaccordion">mod_qaccordion.php</filename>
+    <filename>mod_qaccordion.xml</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl</folder>
+    <folder>assets</folder>
+  </files>
+  
+  <languages>
+    <language tag="en-GB">en-GB.mod_qaccordion.ini</language>
+  </languages>
+  
+  <params>
+   <param name="categories" size="9" type="category" default="" label="CATEGORY_LABEL" description="CATEGORY_DESC" /> 
+   <param name="orderBy" type="list" default="article" label="ORDER_LABEL" description="ORDER_DESC" >
+      <option value="article">ORDER_OPTION_1</option>
+      <option value="alpha">ORDER_OPTION_2</option>
+      <option value="modified">ORDER_OPTION_3</option>
+      <option value="newDate">ORDER_OPTION_4</option>
+      <option value="oldDate">ORDER_OPTION_5</option>
+      <option value="hits">ORDER_OPTION_6</option>
+   </param>
+   <param name="countItem" type="text" default="5" label="COUNT_LABEL" description="COUNT_DESC" />
+   <param name="readMore" type="radio" default="1" label="READ_LABEL" description="READ_DESC" >
+       <option value="0" >READ_OPTION_1</option>
+       <option value="1" >READ_OPTION_2</option>
+   </param>
+   <param name="hover" type="radio" default="click" label="HOVER_LABEL" description="HOVER_DESC" >
+       <option value="click" >HOVER_OPTION_1</option>
+       <option value="mouseenter" >HOVER_OPTION_2</option>
+   </param> 
+   <param name="display" type="text" default="0" label="INDEX_LABEL" description="INDEX_DESC" />
+   <param name="alwaysHide" type="radio" default="0" label="ALWAYSHIDE_LABEL" description="ALWAYSHIDE_DESCRIPTION">
+       <option value="0" >ALWAYSHIDE_OPTION_1</option>
+       <option value="1" >ALWAYSHIDE_OPTION_2</option>
+   </param>
+   <param name="opacity" type="radio" default="0" label="OPACITY_LABEL" description="OPACITY_DESC" >
+       <option value="0" >OPACITY_OPTION_1</option>
+       <option value="1" >OPACITY_OPTION_2</option>
+   </param>
+   <param name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_LABEL" description="MODULE_CLASS_DESC" />"
+  </params>
+</install>

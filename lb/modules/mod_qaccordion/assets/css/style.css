@@ -1,0 +1,18 @@
+div.qaccordion .acc-header-active{
+  cursor: pointer;
+  margin: 2px 95px 3px 0;
+  padding: 1px 0 -25px 0;
+  background:#000;
+  font-size:20px;
+  opacity: 0.8; 
+  filter: alpha(opacity=9);
+}
+
+div.qaccordion .acc-header {
+  cursor: pointer;
+  margin: 0px 75px 0 0;
+  padding: 1px 0 -45px 0;
+  background:#000;
+  opacity: 0.8; 
+  filter: alpha(opacity=9);
+}

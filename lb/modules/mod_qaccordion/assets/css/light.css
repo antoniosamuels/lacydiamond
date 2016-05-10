@@ -1,0 +1,61 @@
+/**
+ * Light Style Sheet for QLUE Accordion
+ *  
+ * Author: Dan Humphries - QLUE
+ * Website: www.qlue.co.uk
+ */
+div.qaccordion .acc-header-active{
+  cursor: pointer;
+  margin: 2px 75px 3px 0;
+  padding: 1px 0 -25px 0;
+  background-color:#000;
+  font-size:25px;
+  opacity: 0.8; 
+  filter: alpha(opacity=9);
+}
+
+div.qaccordion .acc-header {
+  cursor: pointer;
+  margin: 0px 35px 0 0;
+  padding: 1px 0 -25px 0;
+  background-color:#000;
+  opacity: 0.8; 
+  filter: alpha(opacity=9);
+}
+
+div.qaccordion-light {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+div.qaccordion-light div.acc-header{
+  margin: 5px 0 0 0;
+  padding: 10px 0px 10px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background: #FEFEFE;
+  color: #83D8D8;
+  border-bottom: 5px solid #D4FFFF;
+  cursor: pointer;
+}
+div.qaccordion-light div.acc-header:hover{
+  border-bottom: 5px solid #156ABF;
+  color: #156ABF;
+}
+
+div.qaccordion-light div.content{
+  padding-bottom: 5px;
+  border-top: none;
+  border: 2px solid #D4FFFF;
+  background: #FEFEFE;
+  color: #000;
+  opacity: 0.45; 
+}
+div.qaccordion-light div.content:hover{
+  background: #FCFCFC;
+  opacity: 1;
+}
+
+div.qaccordion-light div.content p{
+  text-align: justify;
+}

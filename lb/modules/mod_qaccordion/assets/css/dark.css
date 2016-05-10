@@ -1,0 +1,37 @@
+/**
+ * Dark Style Sheet for QLUE Accordion
+ *  
+ * Author: Dan Humphries - QLUE
+ * Website: www.qlue.co.uk
+ */
+.qaccordion-dark {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.qaccordion-dark div.acc-header{
+  margin: 5px 0 0 0;
+  padding: 10px 0px 10px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background: #444;
+  color: #FEFEFE;
+  border: 1px solid #5A5A5A;
+  border-bottom: 2px solid #5A5A5A;
+  cursor: pointer;
+}
+.qaccordion-dark div.acc-header:hover{
+  background: #101010;
+  color: #FFF;
+}
+
+.qaccordion-dark div.acc-content{
+  padding-bottom: 5px;
+  border: 1px solid #5A5A5A;
+  background: #C3C3C3;
+  color: #000; 
+}
+
+.qaccordion-dark div.acc-content p{
+  text-align:left;
+}

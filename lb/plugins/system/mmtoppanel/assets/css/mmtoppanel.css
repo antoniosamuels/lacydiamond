@@ -1,0 +1,27 @@
+/* $Id: mmtoppanel.css 339 2010-02-02 20:48:06Z martin $ */
+
+table.admintable td.key label {
+    display: block;
+    padding-top: 2px;
+}
+table.admintable label.hasTip {
+    padding-right: 18px;
+    background: url(../images/icon-tooltip.png) no-repeat 100% 55%;
+}
+
+/* Slider styles */
+.area {
+    background: #ccc;
+    height: 10px;
+    width: 135px;
+    margin-top:5px;
+}
+.knob {
+    height: 10px;
+    width: 20px;
+    background: #000;
+}
+
+#knob-opacity {
+    cursor: pointer;
+}

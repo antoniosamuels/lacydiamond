@@ -1,0 +1,52 @@
+ .lof-accordion-basic > .lof-toggler{
+	padding: 2px 5px 5px 0px !important;
+	cursor:hand;
+	cursor:pointer;
+	overflow:hidden;
+	border-bottom:0px dotted #DEDEDE;
+	font-size:125%;
+	height:20px;
+	position:relative;
+	font-weight:lighter;
+	color:#ddd;
+	opacity: 0.6; 
+  	filter: alpha(opacity=8);
+}
+
+ .lof-accordion-basic > .lof-toggler img {
+ 	padding: 2px 2px 2px 0px !important;
+	margin:0!important;
+	float:left
+ }
+ 
+ .lof-accordion-basic > .lof-toggler span.lof-title{
+	font-size:18px;
+	background-color: #000;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	padding-top: 2px;
+	padding-right: 22px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+ }
+ 
+ .lof-accordion-basic > .lof-toggler span.lof-subdesc{
+	font-size:85%;
+	font-weight:lighter;
+ }
+ 
+.lof-accordion-basic .lof-element{
+	overflow:hidden;
+	margin-left:2px;
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+}
+ .lof-accordion-basic  .lof-active{
+	background:#000;
+}
+
+ .lof-accordion-basic  .lof-inner{ 
+    padding:1px;
+}

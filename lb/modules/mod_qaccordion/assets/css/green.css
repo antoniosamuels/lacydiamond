@@ -1,0 +1,59 @@
+/**
+ * Light Style Sheet for QLUE Accordion
+ *  
+ * Author: Dan Humphries - QLUE
+ * Website: www.qlue.co.uk
+ */
+.qaccordion-green {
+  margin-top: 10px;
+  font-size: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#CCC))!important;
+  background: -moz-linear-gradient(top, #FEFEFE, #CCC)!important; 
+  border-top: none!important;
+  border: 1px solid #444;
+}
+
+.qaccordion-green div.acc-header{
+  margin: 0 0 0 0;
+  padding: 10px 0px 10px 5%;
+  color: #444;
+  text-shadow: 0px 0px 2px #F1F1F1;
+  font-size: 25px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#81b43d), to(#6a9c29))!important;
+  background: -moz-linear-gradient(top, #81b43d, #6a9c29)!important;
+  cursor: pointer;
+  border-top: 1px solid #444;
+  border-bottom: 5px solid #444; 
+}
+
+.qaccordion-green div.acc-header:hover{
+  background: #81b43d;
+  border-bottom: 5px solid #888;
+  color: #FEFEFE;
+  text-shadow: 0px 0px 2px #444;
+}
+
+.qaccordion-green div.acc-content{
+  width: 85%;
+  margin: 5px auto 5px auto;
+  background: #FEFEFE;
+  border: 1px solid #444!important;
+}
+
+.qaccordion-green div.acc-content p {
+  padding: 5px 10px;
+  text-align: justify;
+}
+
+/*
+ * IE 6, 7, 8 Stylings
+ */
+ 
+* .qaccordion-green {
+  background: #CCC;
+} 
+* .qaccordion-green div.acc-header{
+  padding: 10px 0px 8px 5%;
+  background: url("/modules/mod_qaccordion/assets/images/bg-spring.png") top left repeat-x;
+}

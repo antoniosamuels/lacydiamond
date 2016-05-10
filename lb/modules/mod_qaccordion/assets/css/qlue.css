@@ -1,0 +1,30 @@
+div.qaccordion-qlue {
+  margin: 0px!important;
+  border-top: none!important;
+  border: 1px solid #EDEEEF;
+}
+div.qaccordion-qlue div.acc-header{
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0 5px 0;
+  padding: 5px;
+  border-top: 1px solid #EDEEEF;
+  border-bottom: 1px solid #EDEEEF;
+  background: #444!important;
+  color: #AFCA17;
+}
+div.qaccordion-qlue div.acc-header:hover {
+  background: #AFCA17!important;
+  color: #000;
+}
+.qaccordion-qlue div.acc-content{
+  width: 85%;
+  margin: 5px auto 5px auto;
+  background: #FEFEFE;
+}
+div.qaccordion-qlue div.acc-content p{
+  padding-bottom: 5px;
+  text-align:left;
+  line-height: 1.5em;
+}

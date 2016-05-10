@@ -1,0 +1,300 @@
+/**
+ * $Id: mmtoppanel.css 571 2010-10-11 19:41:23Z martin $
+ *  
+ * Do not edit or add to this file if you wish to upgrade mmTopPanel to newer
+ * versions in the future. If you wish to customize mmTopPanel for your
+ * needs please refer to http://www.mmPlugins.com/ for more information.
+*/
+
+/* shared & tab styles */
+#mmToppanel {z-index:auto;
+}
+    #mmToppanel-inner {
+        background: #000;
+		opacity: 0.9; 
+ 		filter: alpha(opacity=7);
+		z-index:auto;
+    }
+    #mmToppanel-handle a {
+        background: url(../images/handle-left.png) bottom left no-repeat;
+        font-size: 10px !important;
+        font-family: "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+        display: inline-block;
+        width: auto;
+        height: 28px;
+        line-height: 28px;
+        white-space: nowrap;
+        padding-left: 10px; 
+        cursor: pointer;
+        text-decoration: none;
+        color: #FFF;
+        outline:none;
+    }
+    #mmToppanel.tab #mmToppanel-handle a {
+        background: url(../images/handle-left.png) bottom left no-repeat;
+    }
+        #mmToppanel-handle a span {
+            display: inline-block;
+            background: url(../images/handle-right.png) bottom right no-repeat;
+            height: 28px;
+            padding-right: 30px;
+            padding-left: 7px;
+            line-height: 28px;
+        }
+        #mmToppanel.tab #mmToppanel-handle-bar.expanded #mmToppanel-handle a span {
+            background: url(../images/handle-right-up.png) bottom right no-repeat;
+        }
+        #mmToppanel.tab #mmToppanel-handle a span.expanded {
+            display: none;
+        }   
+        #mmToppanel.tab #mmToppanel-handle a span.collapsed {
+            display: inline-block;
+        }   
+        #mmToppanel.tab #mmToppanel-handle-bar.expanded #mmToppanel-handle a span.expanded {
+            display: inline-block;
+        }
+        #mmToppanel.tab #mmToppanel-handle-bar.expanded #mmToppanel-handle a span.collapsed {
+            display: none;
+        }
+
+
+/* panel content */    
+#mmToppanel-content {
+    padding: 20px 0px;
+	z-index:auto;
+}
+    #mmToppanel-content ul, #mmToppanel-content ul li {
+        margin: 0px;
+        padding: 0px;
+		z-index:auto;
+    }
+    #mmToppanel-content li.module {
+        float: left;
+        display: inline;
+        list-style: none;
+        padding: 0px 30px;
+        margin: 0px;
+        background: none;
+        overflow: hidden;
+		z-index:auto;
+    }
+
+    #mmToppanel.bar span span {
+        color: #4ECAEC;
+    }
+    
+/* tools */
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+/* general */
+li.module h3 {
+    font-size: 18px;
+    font-family: "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    color: #3aa0bc;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* mod_mainmenu */
+li.module.mod_mainmenu ul {
+    margin: 0px;
+    padding: 0px;
+}
+    li.module.mod_mainmenu li {
+        padding: 0px;
+        margin: 0px;
+        background: url(../images/mod_mainmenu-li-bg.gif) no-repeat 0% 50%;
+        list-style: none;
+    }
+        li.module.mod_mainmenu li a {
+            color: #FFF;
+            font-family: "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+            font-size: 11px;
+            line-height: 22px;
+            text-decoration: underline;
+            display: block;
+            padding-left: 25px;
+            text-align: left;
+        }
+        li.module.mod_mainmenu li a:hover {
+            color: #3aa0bc;
+            background: none;
+        }
+
+/* mod_login */
+li.module.mod_login label {
+    color: #FFF;
+    font-family: "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    font-size: 11px;
+    display: inline-block;
+    padding: 2px 0px 3px 0px;
+}
+    li.module.mod_login .inputbox {
+        border: none;
+        font-size: 11px;
+        color: #FFF;
+        height: 15px;
+        width: 144px;
+        padding: 3px 5px;
+        overflow: hidden;
+        background: url(../images/input-field-bg.gif) no-repeat;
+    }
+    li.module.mod_login input.button {
+        border: none;
+        background: url(../images/mod_login-btn-bg.png) no-repeat;
+        width: 98px;
+        height: 26px;
+        margin-top: 3px;
+        
+        /* Hack to get rid of visible button value attribute */
+        text-indent: 98px;
+        display: block;
+        
+        /* start IE patch */
+        overflow:hidden; 
+        width: 98px;
+        padding-left: 98px;
+        outline: none;
+        /* end IE patch */
+    }
+    li.module.mod_login #form-login-remember {
+        display: none;
+    }
+    li.module.mod_login ul {
+        margin: 15px 2px !important;
+        padding: 0px !important;
+    }
+        li.module.mod_login ul li a {
+            color: #3aa0bc;
+            font-size: 10px;
+        }
+        li.module.mod_login ul li {
+            margin: 0px !important;
+            padding: 0px 0px 0px 18px !important;
+            background: url(../images/icon-bullet.gif) no-repeat 0% 50%;
+            list-style: none;
+        }
+        #mmToppanel.tab #mmToppanel-handle-bar.expanded #mmToppanel-handle a span {
+            background: url(../images/handle-right-up.png) bottom right no-repeat;
+        }
+        #mmToppanel.tab #mmToppanel-handle a span.expanded {
+            display: none;
+        }   
+        #mmToppanel.tab #mmToppanel-handle a span.collapsed {
+            display: inline-block;
+        }   
+        #mmToppanel.tab #mmToppanel-handle-bar.expanded #mmToppanel-handle a span.expanded {
+            display: inline-block;
+        }
+        #mmToppanel.tab #mmToppanel-handle-bar.expanded #mmToppanel-handle a span.collapsed {
+            display: none;
+        }
+  
+/* tools */
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+/* general */
+li.module h3 {
+    font-size: 18px;
+    font-family: "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    color: #3aa0bc;
+    font-weight: normal;
+}
+
+/* mod_mainmenu */
+li.module.mod_mainmenu ul {
+    margin: 0px;
+    padding: 0px;
+}
+    li.module.mod_mainmenu li {
+        padding: 0px;
+        margin: 0px;
+        background: url(../images/mod_mainmenu-li-bg.gif) no-repeat 0% 50%;
+        list-style: none;
+    }
+        li.module.mod_mainmenu li a {
+            color: #FFF;
+            font-family: "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+            font-size: 11px;
+            line-height: 22px;
+            text-decoration: underline;
+            display: block;
+            padding-left: 25px;
+        }
+        li.module.mod_mainmenu li a:hover {
+            color: #3aa0bc;
+        }
+
+/* mod_login */
+li.module.mod_login label {
+    color: #FFF;
+    font-family: "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    font-size: 11px;
+    display: inline-block;
+    padding: 2px 0px 3px 0px;
+}
+    li.module.mod_login .inputbox {
+        border: none;
+        font-size: 11px;
+        color: #FFF;
+        height: 15px;
+        width: 144px;
+        padding: 3px 5px;
+        overflow: hidden;
+        background: url(../images/input-field-bg.gif) no-repeat;
+    }
+    li.module.mod_login input.button {
+        border: none;
+        background: url(../images/mod_login-btn-bg.png) no-repeat;
+        width: 98px;
+        height: 26px;
+        margin-top: 3px;
+        
+        /* Hack to get rid of visible button value attribute */
+        text-indent: 98px;
+        display: block;
+
+        /* start IE patch */
+        overflow:hidden; 
+        width: 98px;
+        padding-left: 98px;
+        outline: none;
+        /* end IE patch */
+    }
+    li.module.mod_login #form-login-remember {
+        display: none;
+    }
+    li.module.mod_login ul {
+        margin: 15px 2px !important;
+        padding: 0px !important;
+    }
+        li.module.mod_login ul li a {
+            color: #3aa0bc;
+            font-size: 10px;
+        }
+        li.module.mod_login ul li {
+            margin: 0px !important;
+            padding: 0px 0px 0px 18px !important;
+            background: url(../images/icon-bullet.gif) no-repeat 0% 50%;
+            list-style: none;
+        }

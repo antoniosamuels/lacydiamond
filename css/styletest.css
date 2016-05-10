@@ -1,0 +1,82 @@
+body {
+	height:100%;
+	margin:0px;
+	background-color:#000;
+	padding:0;
+	overflow:hidden;
+}
+
+#flash {
+	background:url(../workout.swf);
+	position:relative;
+	width:100%;
+	height:100%;
+	z-index:100;
+	opacity: 0.8; 
+	filter: alpha(opacity=70);
+}
+
+#content {
+	position:absolute;
+	z-index:120;
+	background-color:#666;
+	height:45px;
+	left: 0px;
+	top: 341px;
+	width: 100%;
+	opacity: 0.8;
+	bottom:50px;
+	filter: alpha(opacity=70);
+}
+
+#footer {
+	margin:0 auto; 
+	height:60px; 
+	width:100%; 
+	bottom:50px; 
+	z-index:130;
+	left:0;
+	position:relative;
+	padding-left:20px;
+	height:45;
+	left: 0px;
+	opacity: 0.8; 
+	filter: alpha(opacity=70);
+	}
+	
+	
+h1 { 
+	margin-top: 12px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 44px;
+	font-weight: normal;
+	font-family: Georgia,serif;
+	color: #222;
+	}
+	
+h2 { 
+	margin-top: 0;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: normal;
+	font-family: Georgia,serif;
+	color: #C52D08;
+	}
+
+p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #CCC;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	font-style: normal;
+	margin-left: 35px;
+	margin-right: 35px;
+	background-color: #000;
+	padding: 3px;
+}
+
+.img {
+	margin-left: 30px;
+}
